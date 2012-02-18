@@ -1,0 +1,28 @@
+require 'sinatra'
+require './rackmiddleware'
+use RackMiddleware
+
+get '/index' do
+  index.html
+end
+
+post '/#contact' do
+    require 'pony'
+    Pony.mail(
+      :from => params[:name] + "<" + params[:email] + ">",
+      :to => 'manish.gauranga@gmail.com',
+      :subject => params[:name] + " has contacted you",
+      :body => params[:message],
+      :port => '587',
+      :via => :smtp,
+      :via_options => {
+        :address              => 'smtp.gmail.com',
+        :port                 => '587',
+        :enable_starttls_auto => true,
+        :user_name            => 'manish.gauranga',
+        :password             => 'hare$krishna711889',
+        :authentication       => :plain,
+        :domain               => 'localhost.localdomain'
+      })
+end
+

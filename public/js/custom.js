@@ -195,6 +195,7 @@
 		            url: "ruby/contact-send.rb",
 		            data: dataString,
 		            success: function(){ 
+		           
 		          // on success fade out the form and show the success message
 		          $('#contact_form').fadeOut('fast');
 		           $('.success').fadeIn();    	
