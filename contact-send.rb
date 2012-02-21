@@ -57,5 +57,4 @@ post '/ruby/contact-send.rb' do
         :authentication       => :plain,
         :domain               => 'localhost.localdomain'
       })
-  "Hello World"
 end
