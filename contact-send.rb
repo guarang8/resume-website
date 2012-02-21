@@ -31,7 +31,7 @@ require 'sinatra'
 require './rackmiddleware'
 use RackMiddleware
 get '/' do
-  'Welcome to all'
+  erb :welcome
 end
 
 get '/index' do
@@ -59,4 +59,3 @@ post '/ruby/contact-send.rb' do
       })
   "Hello World"
 end
-
