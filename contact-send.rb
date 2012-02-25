@@ -31,11 +31,11 @@ require 'sinatra'
 require './rackmiddleware'
 use RackMiddleware
 get '/' do
-  erb :welcome
+  redirect '/index'
 end
 
 get '/index' do
-  erb index.html
+  erb :index
 end
 
 post '/ruby/contact-send.rb' do
