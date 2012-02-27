@@ -34,6 +34,10 @@ get '/' do
   redirect '/index'
 end
 
+get '/robots.txt' do
+  File.read(File.join('robots.txt'))
+end
+
 get '/index' do
   erb :index
 end
