@@ -173,6 +173,9 @@ span.emphasize
 font-weight: bold;
 }
 
+li.website
+{width:275px;}
+
 span.date
 {font-size: 16px;
 position: absolute;
