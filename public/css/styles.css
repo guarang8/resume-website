@@ -244,6 +244,11 @@ text-indent: -9999px;}
 background: url(../images/stars/2.png) no-repeat top left;
 text-indent: -9999px;}
 
+.two_and_half_star
+{padding: 0 20px 0 90px;
+background: url(../images/stars/2_5.png) no-repeat top left;
+text-indent: -9999px;}
+
 .three_star
 {padding: 0 20px 0 90px;
 background: url(../images/stars/3.png) no-repeat top left;
@@ -252,6 +257,11 @@ text-indent: -9999px;}
 .four_star
 {padding: 0 20px 0 90px;
 background: url(../images/stars/4.png) no-repeat top left;
+text-indent: -9999px;}
+
+.four_and_half_star
+{padding: 0 20px 0 90px;
+background: url(../images/stars/4_5.png) no-repeat top left;
 text-indent: -9999px;}
 
 
